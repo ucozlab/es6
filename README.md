@@ -65,6 +65,11 @@ displayTags(...arr); // ...arr разбивается на аргументы, �
   -  перенос строки просто ентером
   -  возможность писать для строк функции, и получать в массиве строки и параметры. Example:
   ```sh
-var message= `some text ${ new Date().getHours()} another text` // "some text 15 another text"
+tag = (strings, ...values) => {
+    console.log(strings);
+    console.log(values);
+}
+var message = tag`Now is ${ new Date().getHours()} another text`;
+console.log(message);
 ```
   
