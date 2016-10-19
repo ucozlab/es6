@@ -10,7 +10,10 @@
 
 # Arrow functions:
 
-  -  new syntax  functionName () => {}
+  -  new syntax 
+  ```
+  `functionName () => {}`
+  ```
   -  если в одну строчку - то значение возвращается (return)
   -  arrow functions binds to the scope, where they are defined.
 
