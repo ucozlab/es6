@@ -8,14 +8,11 @@
   - в итерации каждый раз новая let;
   - const Нельзя переприсваивать, в остальном все тоже самое.
 
-
 # Arrow functions:
 
   -  new syntax  functionName () => {}
   -  если в одну строчку - то значение возвращается (return)
   -  arrow functions binds to the scope, where they are defined.
-
-
 
 # Default parameters
 
@@ -35,7 +32,6 @@ spread('hello',{
   active: 'yes',
 })
 ```
-
 
 # Rest parameters
 
@@ -60,3 +56,10 @@ displayTags(5,6,7,8,9,'окно',true);
 var arr = [5,6,7,8,9,'окно',true];
 displayTags(...arr); // ...arr разбивается на аргументы, т.е. передается НЕ массивом
 ```
+
+# Template literals
+
+  -  новый синтаксис для выражений 
+  ```sh
+  `строка текста ${выражение} строка текста`
+  ```
