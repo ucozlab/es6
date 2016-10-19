@@ -3,10 +3,10 @@
 
 # Block scoping variables:
 
-  - ```sh let``` видны только после обьявления только в текущем блоке.
-  - ```sh let``` Нельзя переобьявлять.
-  - в итерации каждый раз новая ```sh let```;
-  - ```sh const``` Нельзя переприсваивать, в остальном все тоже самое.
+  - ```let``` видны только после обьявления только в текущем блоке.
+  - ```let``` Нельзя переобьявлять.
+  - в итерации каждый раз новая ```let```;
+  - ```const``` Нельзя переприсваивать, в остальном все тоже самое.
 
 # Arrow functions:
 
@@ -17,16 +17,16 @@
 
 # Default parameters
 
-  -  в функцию можно передать значение по умолчанию  Exaple: loadProfiles( userNames = [] ){ ... }
-  -  можно использовать Named parameters Exaple:
+  -  в функцию можно передать значение по умолчанию  Exaple: ```loadProfiles( userNames = [] ){ ... }```
+  -  можно использовать Named parameters Example:
 
 ```sh
-function spread(name,{popular, active, activeClass = 2000}) {
+function spread( name, {popular, active, activeClass = 2000}) {
    console.log('name', name);
    console.log('popular', popular);
    console.log('active', active);
    console.log('activeClass', activeClass);
-}
+};
 
 spread('hello',{
   popular:true,
